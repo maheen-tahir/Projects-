@@ -2,10 +2,10 @@
 print("WELCOME TO FINANCE CALCULATOR!")
 print("INVESTMENT - to calculate the amount of interest you'll earn on your investment")
 print("BOND - to calculate the amount you'll have to pay on a home loan")
-selection = input("Enter either 'investment' or 'bond' from the menu above to proceed: ").lower()
+user_input = input("Enter either 'investment' or 'bond' from the menu above to proceed: ").lower()
 
 # Handling user input for selection
-if selection == 'investment':
+if user_input == 'investment':
     # Getting user input for investment calculation
     principal_amount = float(input("Enter the amount of money that you are depositing: "))
     interest_rate = float(input("Enter the interest rate (as a percentage): ")) / 100
